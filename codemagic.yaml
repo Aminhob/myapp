@@ -9,13 +9,16 @@ workflows:
     scripts:
       - name: Install dependencies
         script: |
+          echo "Installing dependencies..."
           npm install -g eas-cli
           npm install
       - name: Check Expo login
         script: |
+          echo "Checking Expo login..."
           eas whoami || eas login --token $EXPO_TOKEN
-      - name: Build Android debug (No Keystore)
+      - name: Build Android debug (Interactive, No Keystore)
         script: |
-          eas build -p android --profile preview
+          echo "Starting EAS preview build (interactive, no keystore)..."
+          eas build -p android --profile preview --clear-cache
     artifacts:
       - build/**/*.apk
