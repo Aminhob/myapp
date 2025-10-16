@@ -1,8 +1,12 @@
 {
+  "cli": {
+    "version": ">= 3.14.0",
+    "appVersionSource": "remote"
+  },
   "build": {
     "production": {
       "android": {
-        "buildType": "apk"
+        "buildType": "aab"
       }
     },
     "preview": {
