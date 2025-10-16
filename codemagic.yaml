@@ -16,10 +16,9 @@ workflows:
         script: |
           echo "Checking Expo login..."
           eas whoami || eas login --token $EXPO_TOKEN
-      - name: Build Android release (EAS)
+      - name: Build Android debug (No Keystore)
         script: |
-          echo "Starting EAS build using remote credentials..."
-          eas build -p android --profile production --non-interactive --clear-cache
+          echo "Starting EAS preview build (no keystore)..."
+          eas build -p android --profile preview --non-interactive --clear-cache
     artifacts:
-      - build/**/*.aab
       - build/**/*.apk
