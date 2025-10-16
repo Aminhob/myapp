@@ -1,14 +1,14 @@
 {
   "build": {
+    "production": {
+      "android": {
+        "buildType": "aab"
+      }
+    },
     "preview": {
       "distribution": "internal",
       "android": {
         "buildType": "apk"
-      }
-    },
-    "production": {
-      "android": {
-        "buildType": "aab"
       }
     }
   }
