@@ -18,7 +18,7 @@ workflows:
           eas whoami || eas login --token $EXPO_TOKEN
       - name: Build Android debug (No Keystore)
         script: |
-          echo "Starting EAS preview build (no keystore)..."
-          eas build -p android --profile preview --non-interactive --clear-cache
+          echo "Starting EAS preview build (interactive, no keystore)..."
+          eas build -p android --profile preview --clear-cache
     artifacts:
       - build/**/*.apk
