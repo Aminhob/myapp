@@ -6,7 +6,7 @@
   "build": {
     "production": {
       "android": {
-        "buildType": "aab"
+        "buildType": "apk"
       }
     },
     "preview": {
