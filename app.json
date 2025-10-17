@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "emaamul",
+    "slug": "eMaamul",
+    "scheme": "emaamul",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#F8F8F8"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": ""
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.emaamul.app"
+    },
+    "android": {
+      "package": "com.emaamul.app",
+      "permissions": [
+        "CAMERA",
+        "NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications"
+      ],
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "00ccd08f-edb3-4f0d-abfe-8368b569b50b"
+      },
+      "firebase": {
+        "projectNumber": "850721536439",
+        "projectId": "data-81861",
+        "storageBucket": "data-81861.firebasestorage.app",
+        "apiKey": "AIzaSyBBr1LKcE348oIrAe38MHOAxVQPfSNsPz8",
+        "webApiKey": "AIzaSyBBr1LKcE348oIrAe38MHOAxVQPfSNsPz8",
+        "authDomain": "data-81861.firebaseapp.com",
+        "databaseURL": "https://data-81861-default-rtdb.firebaseio.com",
+        "messagingSenderId": "850721536439",
+        "appId": "1:850721536439:web:962b99c96f02c25b169032",
+        "appIdAndroid": "1:850721536439:android:bde444ccc377fa07169032",
+        "packageName": "com.emaamul.app"
+      },
+      "theme": {
+        "primary": "#FF4500",
+        "secondary": "#002366",
+        "background": "#F8F8F8"
+      }
+    },
+    "owner": "amiinhob"
+  }
+}

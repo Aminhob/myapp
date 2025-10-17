@@ -1,0 +1,29 @@
+workflows:
+  eas-android:
+    name: "EAS Android Build"
+    environment:
+      node: 18
+      groups:
+        - expo-tokens
+      vars:
+        JAVA_HOME: "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
+    scripts:
+      - name: Install dependencies
+        script: |
+          echo "Installing dependencies..."
+          npm install -g eas-cli
+          npm install
+      - name: Check Expo login
+        script: |
+          echo "Checking Expo login..."
+          eas whoami || eas login --token $EXPO_TOKEN
+      - name: Build Android release (EAS)
+        script: |
+          echo "Using Java at $JAVA_HOME"
+          export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home"
+          export PATH=$JAVA_HOME/bin:$PATH
+          echo "Starting EAS build using remote credentials..."
+          eas build -p android --profile production --non-interactive --clear-cache
+    artifacts:
+      - build/**/*.aab
+      - build/**/*.apk

@@ -1,0 +1,34 @@
+{
+  "project_info": {
+    "project_number": "850721536439",
+    "firebase_url": "https://data-81861-default-rtdb.firebaseio.com",
+    "project_id": "data-81861",
+    "storage_bucket": "data-81861.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850721536439:android:bde444ccc377fa07169032",
+        "android_client_info": {
+          "package_name": "com.emaamul.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFOglK931vQI7sZ_aaDl2zB_vVsIY3644"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 9556b2a (update: fixed android SDK path issue)
